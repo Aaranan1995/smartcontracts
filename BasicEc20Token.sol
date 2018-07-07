@@ -4,7 +4,7 @@ pragma solidity ^0.4.21;
 import "./TokenInterface.sol";
 
 
-contract basicErc20token is TokenInterface {
+contract BasicErc20Token is TokenInterface {
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
@@ -14,7 +14,7 @@ contract basicErc20token is TokenInterface {
     uint8 public decimals;                
     string public symbol;                 
 
-    function basicErc20token(
+    function BasicErc20Token(
         uint256 _initialAmount,
         string _tokenName,
         uint8 _decimalUnits,
