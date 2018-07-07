@@ -100,7 +100,6 @@ contract RentalAgreement {
         value : msg.value
         }));
     }
-    and the contract is terminated */
     function terminateContract()
     onlyLandlord
     {
